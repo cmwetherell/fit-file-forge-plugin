@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "fit-file-forge": {
+      "type": "http",
+      "url": "https://mcp.fitfileforge.com/mcp"
+    }
+  }
+}
