@@ -1,13 +1,12 @@
 # Fit File Forge for Claude
 
-> [!WARNING]
-> **Work in progress.** This plugin is still being built and does not work yet. It is not listed in the Claude directory or the ChatGPT Plugin Directory, and the connector at `mcp.fitfileforge.com` is not live. Skills, tools and wording here will change before launch.
-
 Fit File Forge lets you ask about your training and put workouts on your Garmin watch from a conversation. Ask how this morning's intervals went, whether your fitness is building, or what's realistic for Sunday's 10K, and Claude answers from your own data. Describe a workout in plain words ("4 × 8 min at threshold on Thursday") and Fit File Forge builds a valid Garmin workout and, when you confirm, sends it to your watch.
 
 ## Use it
 
-1. Install the plugin, then connect **Fit File Forge** from the plugin's Connectors tab and sign in. New accounts start a 14-day trial; the connector is part of Fit File Forge Pro.
+1. Install the plugin, then connect **Fit File Forge** from the plugin's Connectors tab and sign in with your Fit File Forge account. The connector is part of Fit File Forge Pro; new accounts start with a 14-day trial. Activity data needs Garmin Connect linked in Fit File Forge with activity sharing on.
+
+   Without the plugin, add the connector directly: in Claude, Settings → Connectors → Add custom connector, URL `https://mcp.fitfileforge.com/mcp`. In Claude Code: `claude mcp add --transport http fit-file-forge https://mcp.fitfileforge.com/mcp`.
 2. Ask about a session, a week or a block, for example:
    - "How did my last run go? Did I hit the reps?"
    - "Compare my last four long runs: pace, heart rate and drift."
@@ -23,6 +22,8 @@ The plugin's connector talks to `mcp.fitfileforge.com` on your behalf after you 
 
 - Privacy policy: https://www.fitfileforge.com/privacy
 - Terms: https://www.fitfileforge.com/terms
+- Setup and FAQ: https://www.fitfileforge.com/ai
+- Support: support@fitfileforge.com
 
 Garmin and Garmin Connect are trademarks of Garmin Ltd. or its subsidiaries. Fit File Forge is not sponsored or endorsed by Garmin. Training information is informational, not medical advice.
 
