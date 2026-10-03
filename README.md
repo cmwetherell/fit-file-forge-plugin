@@ -1,6 +1,7 @@
 # Fit File Forge for Claude
 
-> **Status: in development.** Not yet listed in the Claude directory or the ChatGPT Plugin Directory. The connector address below goes live at launch.
+> [!WARNING]
+> **Work in progress.** This plugin is still being built and does not work yet. It is not listed in the Claude directory or the ChatGPT Plugin Directory, and the connector at `mcp.fitfileforge.com` is not live. Skills, tools and wording here will change before launch.
 
 Fit File Forge lets you ask about your training and put workouts on your Garmin watch from a conversation. Ask how this morning's intervals went, whether your fitness is building, or what's realistic for Sunday's 10K, and Claude answers from your own data. Describe a workout in plain words ("4 × 8 min at threshold on Thursday") and Fit File Forge builds a valid Garmin workout and, when you confirm, sends it to your watch.
 
