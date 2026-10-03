@@ -1,7 +1,7 @@
 {
   "name": "fit-file-forge",
   "displayName": "Fit File Forge",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Ask about your training and put workouts on your Garmin watch from a conversation: session debriefs, fitness and form, race predictions, and structured workouts built from plain language.",
   "author": { "name": "Forge Labs LLC", "url": "https://www.fitfileforge.com" },
   "homepage": "https://www.fitfileforge.com",
@@ -10,7 +10,7 @@
   "keywords": ["running", "cycling", "triathlon", "training", "garmin", "workouts", "endurance"],
   "icon": "./assets/icon.png",
   "documentationUrl": "https://www.fitfileforge.com/ai",
-  "supportUrl": "https://www.fitfileforge.com/ai",
+  "supportUrl": "https://www.fitfileforge.com/ai#support",
   "privacyPolicyUrl": "https://www.fitfileforge.com/privacy",
   "termsOfServiceUrl": "https://www.fitfileforge.com/terms"
 }
