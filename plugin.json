@@ -1,6 +1,7 @@
 {
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "fit-file-forge",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Ask about your training and put workouts on your Garmin watch from a conversation: session analysis, fitness and form, race predictions, and structured workouts built from plain language.",
   "author": {
     "name": "Forge Labs LLC",
@@ -10,39 +11,46 @@
   "homepage": "https://www.fitfileforge.com/ai",
   "repository": "https://github.com/cmwetherell/fit-file-forge-plugin",
   "license": "MIT",
-  "keywords": ["running", "cycling", "triathlon", "swimming", "training", "garmin", "workouts", "endurance"],
-  "skills": "./skills/",
-  "mcpServers": "./.mcp.json",
-  "interface": {
-    "displayName": "Fit File Forge",
-    "shortDescription": "Your training, analysed",
-    "longDescription": "Fit File Forge connects ChatGPT to your endurance training. Ask how a session went and get a detailed analysis from your real data: pacing and splits, heart rate and power, climbing, time in zones and a chart of the whole session. Ask whether your fitness is building, how fatigued you are, or what time is realistic for your next 5K, half or marathon. Describe a workout in plain words (\"6 × 800 m at 5K pace on Thursday\") and Fit File Forge builds a valid structured Garmin workout, shows it, and sends it to your watch only when you ask.\n\nFor runners, cyclists, swimmers and triathletes who train with a Garmin watch and use Fit File Forge (fitfileforge.com). You need a Fit File Forge account; the connector is part of Fit File Forge Pro, and new accounts start with a 14-day trial. Activity data needs Garmin Connect linked in Fit File Forge with activity sharing on.\n\nWhat it never shares: GPS locations or routes, original activity files, or health data such as sleep or HRV (Fit File Forge doesn't collect it). You choose what ChatGPT may see and do when you connect, and you can disconnect at any time. Training information only, not medical advice.",
-    "developerName": "Forge Labs LLC",
-    "category": "Health & Fitness",
-    "capabilities": [
-      "Analyse a training session in detail",
-      "Track fitness, fatigue and training load",
-      "Predict race times and best efforts",
-      "Show your training calendar",
-      "Build structured workouts from plain language",
-      "Send workouts to your Garmin watch when you ask"
-    ],
-    "websiteURL": "https://www.fitfileforge.com/ai",
-    "supportURL": "https://www.fitfileforge.com/ai#support",
-    "privacyPolicyURL": "https://www.fitfileforge.com/privacy",
-    "termsOfServiceURL": "https://www.fitfileforge.com/terms",
-    "defaultPrompt": [
-      "Analyse my latest workout in detail.",
-      "Am I getting fitter? Show my last 12 weeks.",
-      "Build me 6 × 800 m at 5K pace for Thursday."
-    ],
-    "brandColor": "#4A6B00",
-    "brandColorDark": "#D4FF00",
-    "composerIcon": "./assets/icon.png",
-    "logo": "./assets/icon.png"
-  },
+  "keywords": [
+    "running",
+    "cycling",
+    "triathlon",
+    "swimming",
+    "training",
+    "garmin",
+    "workouts",
+    "endurance"
+  ],
   "extensions": {
     "com.openai": {
+      "interface": {
+        "displayName": "Fit File Forge",
+        "shortDescription": "Your training, analysed",
+        "longDescription": "Fit File Forge connects ChatGPT to your endurance training. Ask how a session went and get a detailed analysis from your real data: pacing and splits, heart rate and power, climbing, time in zones and a chart of the whole session. Ask whether your fitness is building, how fatigued you are, or what time is realistic for your next 5K, half or marathon. Describe a workout in plain words (\"6 × 800 m at 5K pace on Thursday\") and Fit File Forge builds a valid structured Garmin workout, shows it, and sends it to your watch only when you ask.\n\nFor runners, cyclists, swimmers and triathletes who train with a Garmin watch and use Fit File Forge (fitfileforge.com). You sign in with your Fit File Forge account; activity data needs Garmin Connect linked in Fit File Forge with activity sharing on.\n\nWhat it never shares: GPS locations or routes, original activity files, or health data such as sleep or HRV (Fit File Forge doesn't collect it). You choose what ChatGPT may see and do when you connect, and you can disconnect at any time. Training information only, not medical advice.",
+        "developerName": "Forge Labs LLC",
+        "category": "Health & Fitness",
+        "capabilities": [
+          "Analyse a training session in detail",
+          "Track fitness, fatigue and training load",
+          "Predict race times and best efforts",
+          "Show your training calendar",
+          "Build structured workouts from plain language",
+          "Send workouts to your Garmin watch when you ask"
+        ],
+        "websiteURL": "https://www.fitfileforge.com/ai",
+        "supportURL": "https://www.fitfileforge.com/ai#support",
+        "privacyPolicyURL": "https://www.fitfileforge.com/privacy",
+        "termsOfServiceURL": "https://www.fitfileforge.com/terms",
+        "defaultPrompt": [
+          "Analyse my latest workout in detail.",
+          "Am I getting fitter? Show my last 12 weeks.",
+          "Build me 6 × 800 m at 5K pace for Thursday."
+        ],
+        "brandColor": "#4A6B00",
+        "brandColorDark": "#D4FF00",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/icon.png"
+      },
       "review": {
         "test_cases": {
           "positive": [

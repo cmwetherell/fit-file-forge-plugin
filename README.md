@@ -4,7 +4,7 @@ Fit File Forge lets you ask about your training and put workouts on your Garmin 
 
 ## Use it
 
-1. Install the plugin, then connect **Fit File Forge** from the plugin's Connectors tab and sign in with your Fit File Forge account. The connector is part of Fit File Forge Pro; new accounts start with a 14-day trial. Activity data needs Garmin Connect linked in Fit File Forge with activity sharing on.
+1. Install the plugin, then connect **Fit File Forge** from the plugin's Connectors tab and sign in with your Fit File Forge account. Activity data needs Garmin Connect linked in Fit File Forge with activity sharing on; see https://www.fitfileforge.com/ai for setup and what's included.
 
    Without the plugin, add the connector directly: in Claude, Settings → Connectors → Add custom connector, URL `https://mcp.fitfileforge.com/mcp`. In Claude Code: `claude mcp add --transport http fit-file-forge https://mcp.fitfileforge.com/mcp`.
 2. Ask about a session, a week or a block, for example:

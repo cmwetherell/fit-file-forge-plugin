@@ -15,3 +15,5 @@ To debrief a session:
 Read `dataNotes` before interpreting: they say, for example, that cadence is in steps per minute, or that Garmin sent only a summary (then there are no laps, zones, splits or series, so say so and don't infer them).
 
 Answer in this order: one sentence with the verdict, then the evidence with units (reps, splits, paces, heart rate, power), then one practical suggestion. Use the athlete's own thresholds and zones, never age-based formulas. Fit File Forge has no sleep, HRV or stress data. Pain or injury questions get a training-load answer and a pointer to a professional, never a diagnosis.
+
+These steps are defaults. If the athlete asks for something different (shorter, a different focus or order, no chart), do what they ask.
