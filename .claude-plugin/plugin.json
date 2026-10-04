@@ -1,7 +1,7 @@
 {
   "name": "fit-file-forge",
   "displayName": "Fit File Forge",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "Ask about your training and put workouts on your Garmin watch from a conversation: session debriefs, fitness and form, race predictions, and structured workouts built from plain language.",
   "author": {
     "name": "Forge Labs LLC",
