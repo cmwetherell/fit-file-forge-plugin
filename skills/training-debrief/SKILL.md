@@ -8,7 +8,7 @@ To debrief a session:
 1. Find it with `find_activities` (by date, sport or name) unless the user gave one. If more than one fits, ask which.
 2. Call `get_athlete` once per conversation for the athlete's thresholds, units and what they allowed when connecting.
 3. Read it fully: `get_activity` with depth `full` (summary, laps, zones, best efforts), then `get_activity_splits` (by `km` or `mi` for steady sessions, by `lap` for intervals).
-4. If the athlete allowed detailed data, call `get_activity_series` for the channels the question needs (heart rate, pace or power, elevation) and chart heart rate against pace or power and elevation. Analyse it in code rather than estimating.
+4. If the athlete allowed detailed data, call `get_activity_series` for the channels the question needs (heart rate, pace or power, elevation) and chart heart rate against pace or power and elevation where you can. Compute from the data rather than estimating.
 5. If a workout was planned that day (`get_calendar`), compare what was done with what was planned, rep by rep.
 6. Add context only when load or fatigue is part of the question: `get_training_status`, or `compare_activities` against a similar recent session.
 
