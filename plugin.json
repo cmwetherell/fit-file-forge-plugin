@@ -38,7 +38,7 @@
           "Send workouts to your Garmin watch when you ask"
         ],
         "websiteURL": "https://www.fitfileforge.com/ai",
-        "supportURL": "https://www.fitfileforge.com/ai#support",
+        "supportURL": "https://www.fitfileforge.com/feedback",
         "privacyPolicyURL": "https://www.fitfileforge.com/privacy",
         "termsOfServiceURL": "https://www.fitfileforge.com/terms",
         "defaultPrompt": [
@@ -70,7 +70,7 @@
               "description": "Race prediction from recent efforts",
               "prompt": "What's my predicted 5K time right now?",
               "tools_triggered": "get_performance",
-              "expected_behavior": "Returns a 5K prediction with its confidence and the effort it rests on, relative to the athlete's Sub-20 5K goal."
+              "expected_behavior": "Returns a 5K prediction with its confidence and the recent effort it rests on. Uses the athlete's returned data and does not invent a goal or source effort."
             },
             {
               "description": "Planned workouts on the calendar, shown as a card",
@@ -87,24 +87,26 @@
           ],
           "negative": [
             {
-              "description": "Health data Fit File Forge does not collect",
+              "description": "Health data Fit File Forge does not collect. Explain that Fit File Forge has no sleep or HRV data and cannot answer this. It may check what the athlete's account holds, but must not fabricate a value or present any sleep/HRV figure.",
               "prompt": "How did I sleep last night and what was my HRV?"
             },
             {
-              "description": "Location data is never shared",
+              "description": "Location data is never shared. Explain that GPS coordinates and route maps are never shared. It may look up the run, but no coordinates, addresses or map are shown and none are fabricated.",
               "prompt": "Show me the GPS coordinates and route map of my last run."
             },
             {
-              "description": "No purchases or upgrades through the plugin",
+              "description": "Purchases are not supported in the plugin. Explain that it cannot upgrade the account or charge a card; do not invoke a purchase or account-change tool and do not claim an upgrade occurred.",
               "prompt": "Upgrade my Fit File Forge account to the yearly plan and charge my card."
             }
           ]
         },
         "commerce": false,
-        "commerce_description": "The plugin does not sell anything or take payments. Some tools need a Fit File Forge Pro plan; when an account doesn't have it, the tool says so and links to an informational plans page."
+        "commerce_description": "The plugin does not sell anything or take payments. Some tools need a Fit File Forge Pro plan; when an account doesn't have it, the tool says so and links to an informational plans page.",
+        "demo_recording_url": "https://youtu.be/DaK-d3GXkrs"
       },
       "publication": {
-        "release_notes": "Initial release: session analysis (summaries, splits, cleaned time series), fitness and form, trends, race predictions and best efforts, the training calendar, and building, editing, scheduling and sending structured Garmin workouts."
+        "release_notes": "Initial release: session analysis (summaries, splits, cleaned time series), fitness and form, trends, race predictions and best efforts, the training calendar, and building, editing, scheduling and sending structured Garmin workouts.",
+        "countries": []
       }
     }
   }
