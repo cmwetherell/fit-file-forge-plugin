@@ -4,9 +4,9 @@ Fit File Forge lets you ask about your training and put workouts on your Garmin 
 
 ## Use it
 
-1. Install the plugin, then connect **Fit File Forge** from the plugin's Connectors tab and sign in with your Fit File Forge account. Activity data needs Garmin Connect linked in Fit File Forge with activity sharing on; see https://www.fitfileforge.com/ai for setup and what's included.
+1. Install the plugin, then connect **Fit File Forge** from the plugin's Connectors tab and sign in with your Fit File Forge account. Every tool except the account summary needs Fit File Forge Pro or its 14-day trial. Activity data needs Garmin Connect linked in Fit File Forge with activity sharing on; see https://www.fitfileforge.com/ai for setup.
 
-   Without the plugin, add the connector directly: in Claude, Settings → Connectors → Add custom connector, URL `https://mcp.fitfileforge.com/mcp`. In Claude Code: `claude mcp add --transport http fit-file-forge https://mcp.fitfileforge.com/mcp`.
+   Without the plugin, add the connector directly: in Claude, Customize → Connectors → Add custom connector, URL `https://mcp.fitfileforge.com/mcp`. In Claude Code: `claude mcp add --transport http fit-file-forge https://mcp.fitfileforge.com/mcp`.
 2. Ask about a session, a week or a block, for example:
    - "How did my last run go? Did I hit the reps?"
    - "Compare my last four long runs: pace, heart rate and drift."
@@ -23,10 +23,14 @@ The plugin's connector talks to `mcp.fitfileforge.com` on your behalf after you 
 - Privacy policy: https://www.fitfileforge.com/privacy
 - Terms: https://www.fitfileforge.com/terms
 - Setup and FAQ: https://www.fitfileforge.com/ai
-- Support: support@fitfileforge.com
+- Support: https://www.fitfileforge.com/feedback · support@fitfileforge.com
 
 Garmin and Garmin Connect are trademarks of Garmin Ltd. or its subsidiaries. Fit File Forge is not sponsored or endorsed by Garmin. Training information is informational, not medical advice.
 
 ## License
 
 MIT, see [LICENSE](LICENSE).
+
+## Repository contents
+
+Claude loads `.claude-plugin/plugin.json`, `.mcp.json`, `skills/` and `assets/`. The root `plugin.json`, `mcp.json` and `chatgpt/` are the same plugin packaged for ChatGPT; Claude does not load them. The plugin runs nothing locally and connects only to `https://mcp.fitfileforge.com/mcp`.
