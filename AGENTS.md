@@ -1,6 +1,6 @@
 # AGENTS.md — fit-file-forge-plugin
 
-The **public** plugin for Fit File Forge in two packages: the Claude plugin (`.claude-plugin/plugin.json`, `.mcp.json`, `README.md`, which Anthropic's directory shows) and the ChatGPT plugin (OpenAI's portable layout: root `plugin.json` + `mcp.json`, with `chatgpt/README.md` as its README; build the upload ZIP with `scripts/build-chatgpt-zip.sh`). Both share `skills/` and `assets/`; keep each README about its own app. The MCP server itself lives in the private app repo (`cmwetherell/fit-file-forge`, route served at `https://mcp.fitfileforge.com/mcp`); this repo only points at it.
+The **public** plugin for Fit File Forge in two packages: the Claude plugin (`.claude-plugin/plugin.json`, `.mcp.json`, `README.md`, which Anthropic's directory shows) and the ChatGPT plugin (OpenAI's portable layout: root `plugin.json` + `mcp.json`, with `chatgpt/README.md` as its README; build the upload ZIP with `scripts/build-chatgpt-plugin-zip.sh [--dev]` in the private app repo (fit-file-forge) — no scripts live here, because Claude's plugin validator holds a plugin whose shell scripts name its image files). Both share `skills/` and `assets/`; keep each README about its own app. The MCP server itself lives in the private app repo (`cmwetherell/fit-file-forge`, route served at `https://mcp.fitfileforge.com/mcp`); this repo only points at it.
 
 ## Rules
 
