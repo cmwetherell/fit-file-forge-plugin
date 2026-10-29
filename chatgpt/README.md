@@ -6,7 +6,7 @@ Fit File Forge lets you ask about your training and put workouts on your Garmin 
 
 1. Connect **Fit File Forge** in ChatGPT and sign in with your Fit File Forge account. Activity data needs Garmin Connect linked in Fit File Forge with activity sharing on; see https://www.fitfileforge.com/ai for setup.
 2. Ask about a session, a week or a block, for example:
-   - "Analyse my latest workout in detail."
+   - "Analyze my latest workout in detail."
    - "Am I getting fitter? Show my last 12 weeks."
    - "What's my predicted 5K time?"
    - "Build me 6 × 800 m at 5K pace for Thursday."
